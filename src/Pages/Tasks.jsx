@@ -288,7 +288,7 @@ const Home = () => {
       <div className="w-full h-full">
         <div className="flex items-center justify-between mb-4">
           <h1 className=" font-semibold text-slate-700 text-lg">Tasks List</h1>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-2">
             <button
               onClick={() => modalHandler(true)}
               className="px-5 py-2 text-sm rounded-md  bg-blue-700 hover:bg-blue-700/70 text-white inline-flex items-center gap-2 leading-4"
@@ -296,7 +296,7 @@ const Home = () => {
               Create Task
             </button>
             <Menu>
-              <MenuButton className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 font-semibold text-slate-800 text-sm">
+              <MenuButton className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 font-semibold text-slate-800 text-sm bg-white">
                 Sort by Users
                 <BiSortDown className="w-5 h-5 " />
               </MenuButton>

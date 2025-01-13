@@ -2,20 +2,25 @@ import { FiChevronDown, FiHome } from "react-icons/fi";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { createInitial } from "../utils";
+import classNames from "classnames";
 
 const Header = () => {
   const [userName, setUserName] = useState("");
   const navigate = useNavigate();
 
   const getUserName = () => {
-    let user = JSON.parse(localStorage.getItem("user"));
-    setUserName(user);
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user && user.fullName) {
+      setUserName(user.fullName);
+    }
   };
 
   const logoutHandler = () => {
     localStorage.removeItem("user");
     navigate("/");
   };
+  const { initial, consistentColor } = createInitial(userName);
 
   useState(() => {
     getUserName();
@@ -30,7 +35,18 @@ const Header = () => {
         <div className="text-right">
           <Menu>
             <MenuButton className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 font-semibold text-slate-600 ">
-              {userName.fullName}
+              <div className="flex items-center gap-2">
+                <span
+                  className={classNames(
+                    "w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-semibold p-1",
+                    consistentColor
+                  )}
+                >
+                  {initial}
+                </span>
+                {userName}
+              </div>
+
               <FiChevronDown className="size-4 fill-white/60" />
             </MenuButton>
 

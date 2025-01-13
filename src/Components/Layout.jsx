@@ -9,7 +9,7 @@ const Layout = () => {
       <div className="w-full shadow-sm fixed top-0 left-0 bg-white z-50">
         <Header />
       </div>
-      <div className="bg-slate-50 w-full flex pt-[72px] h-full">
+      <div className="bg-slate-50 w-full flex pt-[83px] h-full">
         <div className="basis-1/5 h-full">
           <Sidebar />
         </div>

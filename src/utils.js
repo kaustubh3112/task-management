@@ -7,6 +7,8 @@ export const truncateText = (str, length) => {
 
 
 export const createInitial = (name) => {
+    if (!name) return { initial: "", consistentColor: "" };
+
     const colors = [
         "bg-red-500",
         "bg-orange-500",
@@ -19,7 +21,7 @@ export const createInitial = (name) => {
     ];
 
     const userFullName = name.split(" ");
-    const initial =
+    let initial =
         userFullName[0][0] + userFullName[userFullName.length - 1][0];
 
     const colorIndex = name.length % colors.length;
@@ -29,3 +31,4 @@ export const createInitial = (name) => {
         consistentColor: colors[colorIndex],
     };
 };
+
