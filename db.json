@@ -1,0 +1,183 @@
+{
+  "tasks": [
+    {
+      "title": "Ea assumenda adipisc",
+      "description": "Ullam alias dolorem ",
+      "dueDate": "1/13/2025",
+      "priority": "medium",
+      "status": "In Progress",
+      "userId": "25f2",
+      "id": "4dd2"
+    },
+    {
+      "title": "Et enim ad amet dol",
+      "description": "Sint eum molestiae a",
+      "dueDate": "1/13/2025",
+      "priority": "medium",
+      "status": "Pending",
+      "userId": "6486",
+      "id": "7ee7"
+    },
+    {
+      "title": "Quaerat magni atque ",
+      "description": "Voluptate eos cupida",
+      "dueDate": "1/13/2025",
+      "priority": "high",
+      "status": "In Review",
+      "userId": "f791",
+      "id": "86d1"
+    },
+    {
+      "title": "Esse eos aut culpa ",
+      "description": "Iure debitis molliti",
+      "dueDate": "1/13/2025",
+      "priority": "medium",
+      "status": "Pending",
+      "userId": "6486",
+      "id": "9266"
+    },
+    {
+      "title": "Aut eum autem itaque",
+      "description": "Eum unde dignissimos",
+      "dueDate": "1/14/2025",
+      "priority": "low",
+      "status": "Completed",
+      "userId": "f791",
+      "id": "934b"
+    }
+  ],
+  "users": [
+    {
+      "id": "2fe9",
+      "fullName": "Tamara Pamela Gonzales",
+      "email": "amy71@gmail.com",
+      "phone": "1557098184",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Frontend Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.432394"
+    },
+    {
+      "id": "e08b",
+      "fullName": "Cheryl Gerald Stokes",
+      "email": "davidterry@allen-phelps.com",
+      "phone": "7969903178",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Frontend Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.433474"
+    },
+    {
+      "id": "637b",
+      "fullName": "Christopher Lisa Smith",
+      "email": "cclarke@silva-bishop.com",
+      "phone": "8058337381",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Frontend Lead Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.434488"
+    },
+    {
+      "id": "5da4",
+      "fullName": "Andrew Timothy Giles",
+      "email": "evelyn90@gmail.com",
+      "phone": "8937892413",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Backend Lead Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.434977"
+    },
+    {
+      "id": "3539",
+      "fullName": "James Elaine Davis",
+      "email": "joel81@yahoo.com",
+      "phone": "0512177366",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "UI Lead",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.435470"
+    },
+    {
+      "id": "a7d7",
+      "fullName": "Travis Deborah Wade",
+      "email": "yherrera@davidson-hunt.net",
+      "phone": "4604922229",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Sr. UI Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.436288"
+    },
+    {
+      "id": "bfc6",
+      "fullName": "Daniel Matthew Noble",
+      "email": "darrenmartinez@yahoo.com",
+      "phone": "7939489707",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Frontend Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.436845"
+    },
+    {
+      "id": "ab0c",
+      "fullName": "Ryan Richard Davis",
+      "email": "lopezrussell@hernandez-williams.com",
+      "phone": "7091928116",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Sr. Frontend Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.437693"
+    },
+    {
+      "id": "e2bd",
+      "fullName": "Ian Ashley Mccormick",
+      "email": "carolallen@watkins.com",
+      "phone": "8435434193",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Sr. Backend Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.438742"
+    },
+    {
+      "id": "25f2",
+      "fullName": "Craig Teresa Galvan",
+      "email": "mcguirewendy@gmail.com",
+      "phone": "0298293769",
+      "password": "Pass123",
+      "confirmPassword": "Pass123",
+      "designation": "Backend Developer",
+      "userDetails": [],
+      "registeredOn": "2025-01-12T10:46:30.439348"
+    },
+    {
+      "id": "f791",
+      "fullName": "Pranita Avinash Katkade",
+      "email": "pranitakatkade@gmail.com",
+      "phone": "7418529630",
+      "password": "tester",
+      "confirmPassword": "tester",
+      "designation": "Sr. Software Engg",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-12T12:29:08.606Z"
+    },
+    {
+      "id": "6486",
+      "fullName": "Kaustubh Anant Yeolekar",
+      "email": "kaustubhyeolekar@gmail.com",
+      "phone": "74196338520",
+      "password": "123",
+      "confirmPassword": "123",
+      "designation": "UI developer",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-13T05:27:54.621Z"
+    }
+  ]
+}
