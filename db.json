@@ -5,7 +5,7 @@
       "description": "Ullam alias dolorem ",
       "dueDate": "1/13/2025",
       "priority": "medium",
-      "status": "In Progress",
+      "status": "Completed",
       "userId": "25f2",
       "id": "4dd2"
     },
@@ -14,7 +14,7 @@
       "description": "Sint eum molestiae a",
       "dueDate": "1/13/2025",
       "priority": "medium",
-      "status": "Pending",
+      "status": "Backlog",
       "userId": "e08b",
       "id": "7ee7"
     },
@@ -41,9 +41,27 @@
       "description": "Eum unde dignissimos",
       "dueDate": "1/14/2025",
       "priority": "low",
-      "status": "Completed",
+      "status": "Pending",
       "userId": "f791",
       "id": "934b"
+    },
+    {
+      "title": "Responsive Css - Updated",
+      "description": "Sed tempora voluptas Sed tempora voluptas",
+      "dueDate": "1/17/2025",
+      "priority": "high",
+      "status": "In Progress",
+      "userId": "6486",
+      "id": "0dd5"
+    },
+    {
+      "id": "ec01",
+      "title": "Minima deleniti elit",
+      "description": "Dignissimos voluptat",
+      "dueDate": "1/22/2025",
+      "priority": "high",
+      "status": "In Progress",
+      "userId": "6486"
     }
   ],
   "users": [
@@ -173,11 +191,110 @@
       "fullName": "Kaustubh Anant Yeolekar",
       "email": "kaustubhyeolekar@gmail.com",
       "phone": "74196338520",
-      "password": "123",
-      "confirmPassword": "123",
+      "password": "123456",
+      "confirmPassword": "123456",
       "designation": "UI developer",
       "userDetails": [],
       "regsiteredOn": "2025-01-13T05:27:54.621Z"
+    },
+    {
+      "id": "e493",
+      "fullName": "Pushkaraj Anant Yeolekar",
+      "email": "pushkaraj@gmail.com",
+      "phone": "9874563210",
+      "password": "pass123",
+      "confirmPassword": "pass123",
+      "designation": "Software Developer",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-13T10:46:57.535Z"
+    },
+    {
+      "id": "c1b1",
+      "fullName": "Jaime Tucker",
+      "email": "lyzud@mailinator.com",
+      "phone": "+1 (101) 862-4753",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "designation": "Debitis totam quam f",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-16T14:38:34.757Z"
+    },
+    {
+      "id": "8589",
+      "fullName": "Ken Ben",
+      "email": "ken@gmail.com",
+      "phone": "9874563210",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "designation": "Sr. Project Manager",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-17T04:22:53.239Z"
+    },
+    {
+      "id": "7adf",
+      "fullName": "asdsad",
+      "email": "sadassd@gmail.com",
+      "phone": "9878987896",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "designation": "asdasda",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-21T06:57:20.183Z"
+    },
+    {
+      "id": "2893",
+      "fullName": "Portia Hines",
+      "email": "hihyki@mailinator.com",
+      "phone": "9874563310",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "designation": "Molestiae porro fugi",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-21T06:58:54.846Z"
+    },
+    {
+      "id": "b944",
+      "fullName": "Keelie Cleveland",
+      "email": "mokymocola@mailinator.com",
+      "phone": "7896541230",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "designation": "Et minim et quia et ",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-21T07:01:02.573Z"
+    },
+    {
+      "id": "8d02",
+      "fullName": "Britanney Stark",
+      "email": "nymotegif@mailinator.com",
+      "phone": "3114569870",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "designation": "Libero aliqua Paria",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-21T07:01:54.083Z"
+    },
+    {
+      "id": "3a05",
+      "fullName": "Harper Webster",
+      "email": "wanovizico@mailinator.com",
+      "phone": "65412347890",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "designation": "Dolor et et odit ame",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-21T07:02:32.055Z"
+    },
+    {
+      "id": "c34a",
+      "fullName": "Yoko Andrews",
+      "email": "cyxypugur@mailinator.com",
+      "phone": "7412589630",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "designation": "Fugiat nihil laudant",
+      "userDetails": [],
+      "regsiteredOn": "2025-01-21T07:02:55.720Z"
     }
   ]
 }

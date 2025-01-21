@@ -5,35 +5,43 @@ import { toast, ToastContainer } from "react-toastify";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const Login = ({ handleTabChanger }) => {
-  const [user, setUser] = useState({
-    email: "",
-    password: "",
-  });
+  const [user, setUser] = useState({ email: "", password: "" });
+  const [error, setError] = useState({});
+  const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
-  const [showPassword, setShowPassword] = useState(false);
 
   const inputHandler = (e) => {
     const { name, value } = e.target;
-    setUser((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setUser((prev) => ({ ...prev, [name]: value }));
+    setError((prev) => ({ ...prev, [name]: "" }));
   };
-  const showPasswordHandler = () => {
-    setShowPassword(!showPassword);
+
+  const showPasswordHandler = () => setShowPassword((prev) => !prev);
+
+  const validateForm = () => {
+    const newError = {};
+
+    if (!user.email.trim()) {
+      newError.email = "Email is required.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(user.email)) {
+      newError.email = "Invalid email format.";
+    }
+
+    if (!user.password.trim()) {
+      newError.password = "Password is required.";
+    }
+
+    setError(newError);
+    return Object.keys(newError).length === 0;
   };
+
   const formSubmit = async (e) => {
     e.preventDefault();
-
-    if (!user.email || !user.password) {
-      toast.error("Please enter both email and password.");
-      return;
-    }
+    if (!validateForm()) return;
 
     try {
       const result = await getData(`${config.apiBaseUrl}/users`);
-
       if (!result || result.length === 0) {
         toast.error("No users found in the database.");
         return;
@@ -45,12 +53,10 @@ const Login = ({ handleTabChanger }) => {
           dbUser.password === user.password
       );
 
-      console.log("loggedInUser", loggedInUser);
-
       if (loggedInUser) {
         localStorage.setItem("user", JSON.stringify(loggedInUser));
-        navigate("/overview");
         toast.success("Login Successful!");
+        setTimeout(() => navigate("/overview"), 1000);
       } else {
         toast.error("Incorrect login details.");
       }
@@ -80,6 +86,9 @@ const Login = ({ handleTabChanger }) => {
               value={user.email}
               name="email"
             />
+            {error.email && (
+              <small className="text-xs text-red-500">{error.email}</small>
+            )}
           </div>
           <div className="w-full mb-4 relative z-0">
             <input
@@ -101,6 +110,9 @@ const Login = ({ handleTabChanger }) => {
                 <FiEyeOff className="w-5 h-5 text-slate-500" />
               )}
             </button>
+            {error.password && (
+              <small className="text-xs text-red-500">{error.password}</small>
+            )}
           </div>
           <div className="w-full mb-4">
             <button

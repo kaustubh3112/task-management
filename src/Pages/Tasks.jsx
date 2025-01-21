@@ -297,8 +297,8 @@ const Home = () => {
             </button>
             <Menu>
               <MenuButton className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 font-semibold text-slate-800 text-sm bg-white">
-                Sort by Users
                 <BiSortDown className="w-5 h-5 " />
+                Sort by Users
               </MenuButton>
 
               <MenuItems
